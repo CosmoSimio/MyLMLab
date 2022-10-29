@@ -1,4 +1,4 @@
-<h1>My Support LogicMonitor Lab</h1>
+<h1>My LogicMonitor Support Lab</h1>
 <h2>Purpose</h2>
 The purpose of this repo is to launch your LM Support sandbox environment. You will be launching the following EC2 instances (servers) ---<br/>
 <br/>
