@@ -6,7 +6,7 @@ provider "aws" {
 }
 
 #Launch the Windows Domain Controller
-resource "aws_instance" "ec2windc1.isaaclabdom.local" {
+resource "aws_instance" "ENTER WINDOWS DOMAIN CONTROLLER SERVER LAB NAME" {
   ami = var.ami_winserv2022
   instance_type = "t3.small"
   key_name = var.key_name
@@ -14,8 +14,8 @@ resource "aws_instance" "ec2windc1.isaaclabdom.local" {
   security_groups = var.security_group
 
   tags = {
-    "Name" = "ec2windc1.isaaclabdom.local"
-    "Owner" = "isaac.paramo@logicmonitor.com"
+    "Name" = "" #Enter Windows Domain Controller Name
+    "Owner" = "" #Enter your work email
     "Purpose" = "Lab"
   }
 
@@ -30,7 +30,7 @@ resource "aws_instance" "ec2windc1.isaaclabdom.local" {
 }
 
 #Launch the Windows collector server for a LogicMonitor collector agent install
-resource "aws_instance" "ec2wincoll1.isaaclabdom.local" {
+resource "aws_instance" "ENTER WINDOWS COLLECTOR SERVER LAB NAME" {
   ami = var.ami_winserv2022
   instance_type = "t3.small"
   key_name = var.key_name
@@ -38,8 +38,8 @@ resource "aws_instance" "ec2wincoll1.isaaclabdom.local" {
   security_groups = var.security_group
 
   tags = {
-    "Name" = "ec2wincoll1.isaaclabdom.local"
-    "Owner" = "isaac.paramo@logicmonitor.com"
+    "Name" = "" #Enter Windows Domain Controller name
+    "Owner" = "" #Enter your work email
     "Purpose" = "Lab"
     }
 
@@ -54,7 +54,7 @@ resource "aws_instance" "ec2wincoll1.isaaclabdom.local" {
 }
 
 #Launch a Linux collector server for a LogicMonitor collector agent install
-resource "aws_instance" "ec2lincoll1.isaaclabdom.local" {
+resource "aws_instance" "ENTER LINUX COLLECTOR SERVER LAB NAME" {
   ami = var.ami_linux
   instance_type = "t3.small"
   key_name = var.key_name
@@ -62,8 +62,8 @@ resource "aws_instance" "ec2lincoll1.isaaclabdom.local" {
   security_groups = var.security_group
 
   tags = {
-    "Name" = "ec2lincoll1.isaaclabdom.local"
-    "Owner" = "isaac.paramo@logicmonitor.com"
+    "Name" = "" #Enter Linux collector server name
+    "Owner" = "" #Enter your work email
     "Purpose" = "Lab"
     }
 

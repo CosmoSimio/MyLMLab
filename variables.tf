@@ -21,7 +21,6 @@ variable "ami_winserv2022" {
     type = string
     default = "ami-0e2ccde53f223f3c8"
     description = "Microsoft Windows Server 2022 Core Base"
-  
 }
 
 variable "ami_linux" {
@@ -32,15 +31,15 @@ variable "ami_linux" {
 
 variable "key_name" {
   type = string
-  default = "isaac.paramo_aws"
+  default = "" #Enter your AWS EC2 key pair name
 }
 
 variable "vpc_id" {
   type = string
-  default = "vpc-28f47141"
+  default = "" #Enter the VPC ID of the LM Support Lab
 }
 
 variable "security_group" {
   type = string
-  default = "SupportLabSG"
+  default = "" #Enter the Security Group ID of the LM Support Lab
 }
